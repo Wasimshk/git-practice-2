@@ -1,8 +1,11 @@
-import random
-randl=random.sample(range(1,50),10)
-
-
-for i in range(len(randl)):
-    for j in range(i+1, len(randl)):
-        if randl[i]+randl[j]==70:
-            print(randl[i], randl[j])
+list1=[12,23,351,65,45,3,56]
+def min_max(x):
+    min = list1[0]
+    max = list1[0]
+    for i in list1:
+        if i >max:
+            max = i 
+        elif i<min:
+            min = i
+    return min, max
+print(min_max(list1))
